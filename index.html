@@ -1,173 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Adriano Cordeiro – Senior Android Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f9fb;
-      color: #333;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 40px;
-      background: #ffffff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-    }
-    header a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 600;
-    }
-    .hero {
-      padding: 80px 40px;
-      text-align: center;
-      background: linear-gradient(135deg, #75E6DA, #189AB4);
-      color: white;
-    }
-    .hero h1 {
-      margin: 0;
-      font-size: 48px;
-      font-weight: bold;
-    }
-    .hero p {
-      margin-top: 10px;
-      font-size: 20px;
-    }
-    section {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 40px;
-    }
-    h2 {
-      margin-bottom: 20px;
-      font-size: 32px;
-      color: #189AB4;
-    }
-    .experience-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    }
-    .hobby-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .hobby {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      text-align: center;
-      font-size: 18px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-    }
-    footer {
-      margin-top: 60px;
-      padding: 40px;
-      text-align: center;
-      background: #ffffff;
-      font-size: 14px;
-      color: #555;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adriano Cordeiro - Senior Android Engineer</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --bg-dark-blue: #05080c;
+            --bg-dark-blue-variant: #17263a;
+            --text-light: #EAF6F6;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--text-light);
+        }
+
+        header {
+            background: var(--bg-dark-blue);
+            margin: 0 auto;
+            padding: 0 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav {
+            padding: 1rem 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .container {
+            background: var(--bg-dark-blue);
+            margin: 0 auto;
+            padding: 2rem 20px;
+        }
+
+        .container-even {
+            background: var(--bg-dark-blue-variant);
+            margin: 0 auto;
+            padding: 2rem 20px;
+        }
+
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center; 
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .experience-timeline {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .experience-item {
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            border: 1px solid #ddd; /* Light border */
+        }
+
+        .experience-timeline a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .experience-timeline a:hover {
+            color: var(--primary);
+        }
+
+        .skills-content {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-category {
+            margin: 2rem;
+            padding: 2rem;
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            border: 1px solid #ddd; /* Light border */
+        }
+
+        .skill-category h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .skill-category ul {
+            list-style-type: none;
+        }
+
+        .skills-text {
+            font-size: 1rem; 
+            color: var(--text-light); 
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .cta-buttons {
+            margin: 2rem auto;
+        }
+
+        .btn {
+            text-decoration: none;
+        }
+
+        .btn svg {
+            fill: var(--text-light);
+            width: 36px;
+            height: 36px;
+        }
+
+        .project-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .project-image img {
+            border-radius: 1rem;
+            width: 84px;
+            height: 84px;
+        }
+
+        .contact-grid {
+            text-align: center;
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: .8rem;
+        }
+    </style>
 </head>
-
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="hidden">
+        <defs>
+            <symbol id="linkedin-icon" viewBox="0 0 640 640">
+                <path d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM165 266.2L231.5 266.2L231.5 480L165 480L165 266.2zM236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160C219.5 160 236.7 177.2 236.7 198.5zM413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480L413.9 480z"/>
+            </symbol>
+        </defs>
+    </svg>
 
-<header>
-  <div><strong>Adriano Cordeiro</strong></div>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="hidden">
+        <defs>
+            <symbol id="github-icon" viewBox="0 0 640 640">
+                <path d="M544 160C544 124.7 515.3 96 480 96L160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160zM361.8 471.7C361.8 469.9 361.8 465.7 361.9 460.1C362 448.7 362 431.3 362 416.4C362 400.8 356.8 390.9 350.7 385.7C387.7 381.6 426.7 376.5 426.7 312.6C426.7 294.4 420.2 285.3 409.6 273.6C411.3 269.3 417 251.6 407.9 228.6C394 224.3 362.2 246.5 362.2 246.5C335.6 239 305.6 239 279 246.5C279 246.5 247.2 224.3 233.3 228.6C224.2 251.5 229.8 269.2 231.6 273.6C221 285.3 216 294.4 216 312.6C216 376.2 253.3 381.6 290.3 385.7C285.5 390 281.2 397.4 279.7 408C270.2 412.3 245.9 419.7 231.4 394.1C222.3 378.3 205.9 377 205.9 377C189.7 376.8 204.8 387.2 204.8 387.2C215.6 392.2 223.2 411.4 223.2 411.4C232.9 441.1 279.3 431.1 279.3 431.1C279.3 440.1 279.4 452.8 279.4 461.7C279.4 466.5 279.5 470.3 279.5 471.7C279.5 476 276.5 481.2 268 479.7C202 457.6 155.8 394.8 155.8 321.4C155.8 229.6 226 159.9 317.8 159.9C409.6 159.9 484 229.6 484 321.4C484.1 394.8 439.3 457.7 373.3 479.7C364.9 481.2 361.8 476 361.8 471.7zM271.3 416.9C271.1 415.4 272.4 414.1 274.3 413.7C276.2 413.5 278 414.3 278.2 415.6C278.5 416.9 277.2 418.2 275.2 418.6C273.3 419 271.5 418.2 271.3 416.9zM262.2 420.1C260 420.3 258.5 419.2 258.5 417.7C258.5 416.4 260 415.3 262 415.3C263.9 415.1 265.7 416.2 265.7 417.7C265.7 419 264.2 420.1 262.2 420.1zM247.9 417.9C246 417.5 244.7 416 245.1 414.7C245.5 413.4 247.5 412.8 249.2 413.2C251.2 413.8 252.5 415.3 252 416.6C251.6 417.9 249.6 418.5 247.9 417.9zM235.4 410.6C233.9 409.3 233.5 407.4 234.5 406.5C235.4 405.4 237.3 405.6 238.8 407.1C240.1 408.4 240.6 410.4 239.7 411.2C238.8 412.3 236.9 412.1 235.4 410.6zM226.9 400.6C225.8 399.1 225.8 397.4 226.9 396.7C228 395.8 229.7 396.5 230.6 398C231.7 399.5 231.7 401.3 230.6 402.1C229.7 402.7 228 402.1 226.9 400.6zM220.6 391.8C219.5 390.5 219.3 389 220.2 388.3C221.1 387.4 222.6 387.9 223.7 388.9C224.8 390.2 225 391.7 224.1 392.4C223.2 393.3 221.7 392.8 220.6 391.8zM214.6 385.4C213.3 384.8 212.7 383.7 213.1 382.8C213.5 382.2 214.6 381.9 215.9 382.4C217.2 383.1 217.8 384.2 217.4 385C217 385.9 215.7 386.1 214.6 385.4z"/>
+            </symbol>
+        </defs>
+    </svg>
 
-<div class="hero">
-  <h1>Senior Android Engineer & Mobile Platform Leader</h1>
-  <p>Building scalable, high-impact mobile experiences for 10+ years</p>
-</div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="hidden">
+        <defs>
+            <symbol id="email-icon" viewBox="0 0 640 640">
+                <path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/>
+            </symbol>
+        </defs>
+    </svg>
+    <!-- Navigation -->
+    <header>
+        <nav class="header">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skils">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I’m Adriano, a Senior Android Engineer and Engineering Manager based in Berlin.
-    I specialize in mobile architecture, performance optimization, modularization,
-    clean code, and Kotlin Multiplatform. I’ve led engineering teams across Android,
-    iOS, and QA, driven release-process automation, and delivered large-scale 
-    mobile platform improvements.
-  </p>
-</section>
+    <!-- About Section -->
+    <section id="about" >
+        <div class="container">
+            <div class="hero">
+                <div class="content">
+                    <p class="subtitle">Senior Android Engineer | Engineering Manager</p>
+                    <h1>Adriano Cordeiro</h1>
+                    <p>Building high-impact mobile platforms with clean architecture. Specializing in Android, Kotlin.</p>
+                    <div class="cta-buttons">
+                        <a href="https://www.linkedin.com/in/adriano-cordeiro-eng/" class="btn" target="_blank">
+                            <svg><use xlink:href="#linkedin-icon"></use></svg>
+                        </a>
+                        <a href="https://github.com/adrianolc" class="btn" target="_blank">
+                            <svg><use xlink:href="#github-icon"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="experience">
-  <h2>Experience</h2>
 
-  <div class="experience-card">
-    <h3>Engineering Manager – Mobile Platform @ YAZIO (2024)</h3>
-    <p>Led Android/iOS/QA teams, automated releases, optimized codebase, mentored engineers,
-    and drove KMP modularization.</p>
-  </div>
+<!-- Technical Expertise -->
+    <section id="skils">
+        <div class="container-even">
+            <h2 class="section-title">Technical Expertise</h2>
+            <p class="skills-text">
+                Over a decade of hands-on experience in Android application development and mobile platform architecture.
+            </p>
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Mobile Development</h3>
+                        <ul>
+                            <li>Android SDK</li>
+                            <li>Kotlin Multiplatform</li>
+                            <li>Jetpack Compose</li>
+                            <li>MVVM</li>
+                            <li>MVI</li>
+                            <li>Clean Architecture</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>Kotlin</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>C#</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Frameworks</h3>
+                        <ul>
+                            <li>GraphQL</li>
+                            <li>REST</li>
+                            <li>JUnit</li>
+                            <li>Espresso</li>
+                            <li>Robolectric</li>
+                            <li>Maestro</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>CI/CD & Automation</h3>
+                        <ul>
+                            <li>Bitrise</li>
+                            <li>Gitlab CI</li>
+                            <li>GitHub Actions</li>
+                            <li>CircleCI</li>
+                            <li>Fastlane</li>
+                            <li>Bash Script</li>
+                        </ul>
 
-  <div class="experience-card">
-    <h3>Android Tech Lead @ YAZIO (2022–2024)</h3>
-    <p>Reduced technical debt, migrated legacy UI to Jetpack Compose, improved code quality,
-    and streamlined release processes.</p>
-  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="experience-card">
-    <h3>Senior Developer – Core Platform @ SumUp (2022)</h3>
-    <p>Supported architecture decisions, code reviews, testing practices, and platform scaling.</p>
-  </div>
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Engineering Manager - Mobile Platform</div>
+                            <div class="company">YAZIO - Germany (Remote)</div>
+                        </div>
+                        <div class="date">Jan 2024 – Nov 2024</div>
+                    </div>
+                    <ul>
+                        <li>Led cross-platform engineering team (Android, iOS, QA) to optimize mobile platform</li>
+                        <li>Consolidated and automated release process enabling seamless weekly releases</li>
+                        <li>Mentored engineers and improved collaboration between platform and product teams</li>
+                        <li>Advocated for modularization on YAZIO's KMP module for feature sharing</li>
+                    </ul>
+                    <div>
+                        Previously: Android Tech Lead (Dec 2022 - Jan 2024) - Drove refactoring & Compose migration.
+                    </div>
+                </div>
 
-  <div class="experience-card">
-    <h3>Android Chapter Lead @ Choco (2019–2022)</h3>
-    <p>Architected the app (Kotlin, MVVM, Clean Architecture), improved CI, hosted knowledge-sharing sessions.</p>
-  </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Senior Software Developer - Core Platform</div>
+                            <div class="company">SumUp - Berlin, Germany</div>
+                        </div>
+                        <div class="date">May 2022 – Nov 2022</div>
+                    </div>
+                    <ul>
+                        <li>Supported core platform improvements including architecture decisions</li>
+                        <li>Implemented best practices through code reviews, refactors, and unit testing</li>
+                        <li>Collaborated with product and operations teams on key platform features</li>
+                    </ul>
+                </div>
 
-  <div class="experience-card">
-    <h3>Senior Mobile Developer @ OLX Group (2018–2019)</h3>
-    <p>Integrated payment/delivery systems and improved performance across regions.</p>
-  </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Senior Software Engineer | Android Chapter Lead</div>
+                            <div class="company">Choco - Berlin, Germany</div>
+                        </div>
+                        <div class="date">May 2019 – Apr 2022</div>
+                    </div>
+                    <ul>
+                        <li>Architected the Choco app using Kotlin, MVVM, and Clean Architecture</li>
+                        <li>Configured CI pipelines with unit/UI/E2E tests, improving app stability</li>
+                        <li>Hosted chapter meetings for knowledge sharing and reducing technical debt</li>
+                    </ul>
+                </div>
 
-  <div class="experience-card">
-    <h3>Mobile Developer @ Vaniday (2015–2017)</h3>
-    <p>Developed Android features and integrated third-party services for a booking platform.</p>
-  </div>
+                <div>
+                    Previous roles at OLX Group (2018-2019) and Vaniday (2015-2017). Full history available on <a href="https://www.linkedin.com/in/adriano-cordeiro-eng/" target="_blank">LinkedIn.</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container-even">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="imgs/breev.png" />
+                    </div>
+                    <div class="project-content">
+                        <h3>BREEV</h3>
+                        <p class="project-description">Brief description of your project. What problem does it solve? What technologies did you use?</p>
+                        <div class="project-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Jetpack Compose</span>
+                            <span class="tag">KMP</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="hobbies">
-  <h2>Hobbies</h2>
-  <div class="hobby-grid">
-    <div class="hobby">🚴 Cycling</div>
-    <div class="hobby">🎵 Concerts</div>
-    <div class="hobby">🎬 Movies</div>
-    <div class="hobby">☀️ Summer Activities</div>
-  </div>
-</section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's connect</h2>
+            <div class="contact-grid">
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <a href="mailto:adrianolcx@gmail.com" class="btn">
+                        <svg><use xlink:href="#email-icon"></use></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/adriano-cordeiro-eng/" target="_blank" class="btn">
+                        <svg><use xlink:href="#linkedin-icon"></use></svg>
+                    </a>
+                    <a href="https://github.com/adrianolc" target="_blank" class="btn">
+                        <svg><use xlink:href="#github-icon"></use></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:adrianolcx@gmail.com">adrianolcx@gmail.com</a></p>
-  <p><a href="https://www.linkedin.com/in/adriano-cordeiro-eng">LinkedIn</a> | 
-     <a href="https://github.com/adrianolc">GitHub</a></p>
-</section>
+    <!-- Footer -->
+    <footer>
+        <div class="container-even copyright">
+            <p>&copy; 2025 Adriano Cordeiro. All rights reserved.</p>
+        </div>
+    </footer>
 
-<footer>
-  © 2025 Adriano Cordeiro — Built with GitHub Pages
-</footer>
-
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
