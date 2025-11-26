@@ -80,6 +80,23 @@
             align-items: center; 
         }
 
+        .hero-grid {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-image-container {
+            display: flex;
+            justify-content: end;
+        }
+
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
@@ -220,8 +237,8 @@
     <!-- About Section -->
     <section id="about" >
         <div class="container">
-            <div class="hero">
-                <div class="content">
+            <div class="hero hero-grid">
+                <div class="content hero-content">
                     <p class="subtitle">Senior Android Engineer | Engineering Manager</p>
                     <h1>Adriano Cordeiro</h1>
                     <p>Building high-impact mobile platforms with clean architecture. Specializing in Android, Kotlin.</p>
@@ -233,6 +250,9 @@
                             <svg><use xlink:href="#github-icon"></use></svg>
                         </a>
                     </div>
+                </div>
+                <div class="hero-image-container">
+                    <img src="imgs/avatar.png" />
                 </div>
             </div>
         </div>
