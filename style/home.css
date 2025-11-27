@@ -20,7 +20,7 @@ nav {
 }
 
 .text-links a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--text-dark);
     font-weight: 500;
     transition: color 0.3s;
@@ -39,7 +39,7 @@ nav {
 .container {
     background: var(--bg-dark-blue);
     margin: 0 auto;
-    padding: 2rem 2rem;
+    padding: 4rem 2rem;
 }
 
 .description {
@@ -49,7 +49,7 @@ nav {
 .container-even {
     background: var(--bg-dark-blue-variant);
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 4rem 2rem;
 }
 
 .hero {
