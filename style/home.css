@@ -1,25 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --primary: #2563eb;
-    --bg-dark-blue: #05080c;
-    --bg-dark-blue-variant: #17263a;
-    --bg-light-blue: #253d5d;
-    --text-light: #EAF6F6;
-    --text-light-blue: #bccde4;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    line-height: 1.6;
-    color: var(--text-light);
-    background: var(--bg-dark-blue);
-}
-
 header {
     background: var(--bg-dark-blue);
     margin: 0 auto;
