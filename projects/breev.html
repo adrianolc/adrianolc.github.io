@@ -5,8 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BREEV - Breathing and relaxing</title>
     <link rel="stylesheet" href="../style/main.css" />
+    <style>
+        .hero-header {
+            position: relative; /* Establishes a positioning context for the ::before */
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden; /* Essential to crop the blurry edges */
+            /* text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Improves readability */
+        }
+
+        .hero-header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            background-color: #EBE1DA;
+
+            /* The Image Configuration */
+            background-image: url(../imgs/breev-circle.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            
+            /* The Blur Effect */
+            filter: blur(50px);
+            
+            /* The Fix for White Edges */
+            transform: scale(1.1); 
+            
+            /* Push it behind the text */
+            z-index: -1; 
+        }
+
+        .content {
+            margin: 2rem;
+            position: relative; 
+            z-index: 1; /* Ensures text stays on top */
+        }
+
+        .content h1 {
+            color: #1F2937;
+            letter-spacing: .7rem;
+        }
+
+        .content p {
+            color: #1F2937;
+        }
+
+        .logo {
+            margin: 0 2rem;
+            position: relative;
+            top: -40px;
+            z-index: 10;
+        }
+
+        .logo img {
+            box-shadow: 0 2rem 4rem rgba(0,0,0,0.5);
+            border-radius: 1rem;
+            width: 84px;
+            height: 84px;
+        }
+
+    </style>
 </head>
 <body>
-    <img src="../imgs/breev.png" style="align-items: center;" />
+    <header class="hero-header">
+        <div class="content">
+            <h1>BREEV</h1>
+            <p>A simple way to pause, relax, and reset.</p>
+        </div>
+    </header>
+    <div class="logo">
+        <img src="../imgs/breev.png" />
+    </div>
 </body>
 </html>
