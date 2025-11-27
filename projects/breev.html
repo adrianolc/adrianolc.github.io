@@ -53,7 +53,24 @@
 
         .hero-header .content h1 {
             color: #1F2937;
-            letter-spacing: .7rem;
+            letter-spacing: .2rem;
+            font-size: 3em;
+        }
+
+        .hero-header .content h1 .thin {
+            font-weight: 100;
+        }
+
+        .hero-header .content h1 .light {
+            font-weight: 300;
+        }
+
+        .hero-header .content h1 .medium {
+            font-weight: 500;
+        }
+
+        .hero-header .content h1 .bold {
+            font-weight: 700;
         }
 
         .hero-header .content p {
@@ -83,18 +100,17 @@
         .store .tag {
             display: flex;
             align-items: center;  
-            background: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.3);
             backdrop-filter: blur(5px);
             padding: 0.75rem;
             border-radius: 50px;
             margin-bottom: 1rem;
             font-size: .8em;
             width: fit-content;
-            border: 1px solid var(--bg-light-blue);
         }
 
         .store .tag:hover {
-            background: var(--primary);
+            background: rgba(194, 162, 255, 0.4);
         }
 
         .store .tag .icon {
@@ -113,6 +129,11 @@
             color: #424242;
         }
 
+        .store a:active {
+            text-decoration: none;
+            color: #424242;
+        }
+
         .store .btn-text {
             vertical-align: middle;
             margin-left: .8rem;
@@ -123,7 +144,13 @@
 <body>
     <header class="hero-header">
         <div class="content">
-            <h1>BREEV</h1>
+            <h1>
+                <span class="thin">B</span>
+                <span class="light">R</span>
+                <span class="medium">E</span>
+                <span class="bold">E</span>
+                <span class="bold">V</span>
+            </h1>
             <p>A simple way to pause, relax, and reset.</p>
             <div class="store">
                 <a href="#" class="tag">
