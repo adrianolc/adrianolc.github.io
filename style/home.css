@@ -227,6 +227,9 @@ nav {
 }
 
 @media screen and (max-width: 950px) {
+    .hero {
+        min-height: 80vh;
+    }
     .hero-image-container img {
         height: 300px;
         width: auto;
