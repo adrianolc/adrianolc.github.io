@@ -230,9 +230,29 @@ nav {
     .hero {
         min-height: 80vh;
     }
+
     .hero-image-container img {
         height: 300px;
         width: auto;
+    }
+
+    .skill-category {
+        margin: 0;
+        padding: 1.5rem;
+    }
+
+    .experience-item {
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
+
+    .experience-timeline .description {
+        margin: 0 1rem;
+    }
+
+    .project-card {
+        margin: 0;
+        padding: 1.5rem;
     }
 }
 
