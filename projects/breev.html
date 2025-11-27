@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BREEV - Breathing and relaxing</title>
     <link rel="stylesheet" href="../style/main.css" />
+    <script src="https://kit.fontawesome.com/30a962be43.js" crossorigin="anonymous"></script>
     <style>
         .hero-header {
             position: relative;
             min-height: 60vh;
-            overflow: hidden;
             overflow: hidden;
         }
 
@@ -57,12 +57,12 @@
         }
 
         .hero-header .content p {
-            color: #1F2937;
+            color: #424242;
         }
 
         .logo {
             position: relative;
-            top: -40px;
+            top: -42px;
             z-index: 10;
         }
 
@@ -73,6 +73,51 @@
             height: 84px;
         }
 
+        .store {
+            display: flex;         
+            gap: 10px;             
+            flex-wrap: wrap;  
+            margin-top: 1.5rem;
+        }
+
+        .store .tag {
+            display: flex;
+            align-items: center;  
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(5px);
+            padding: 0.75rem;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+            font-size: .8em;
+            width: fit-content;
+            border: 1px solid var(--bg-light-blue);
+        }
+
+        .store .tag:hover {
+            background: var(--primary);
+        }
+
+        .store .tag .icon {
+            color: var(--bg-light-blue);
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+        }
+
+        .store a {
+            text-decoration: none;
+        }
+
+        .store a:visited {
+            text-decoration: none;
+            color: #424242;
+        }
+
+        .store .btn-text {
+            vertical-align: middle;
+            margin-left: .8rem;
+        }
+        
     </style>
 </head>
 <body>
@@ -80,6 +125,24 @@
         <div class="content">
             <h1>BREEV</h1>
             <p>A simple way to pause, relax, and reset.</p>
+            <div class="store">
+                <a href="#" class="tag">
+                    <span class="icon">
+                        <i class="fa-brands fa-apple"></i>
+                    </span>
+                    <span class="btn-text">
+                        Apple Store
+                    </span> 
+                </a>
+                <a href="#" class="tag">
+                    <span class="icon">
+                        <i class="fa-brands fa-android"></i>
+                    </span>
+                    <span class="btn-text">
+                        Google Play
+                    </span>
+                </a>
+            </div>
         </div>
     </header>
     <section>
