@@ -15,6 +15,7 @@
             --primary: #2563eb;
             --bg-dark-blue: #05080c;
             --bg-dark-blue-variant: #17263a;
+            --bg-light-blue: #253d5d;
             --text-light: #EAF6F6;
             --text-light-blue: #bccde4;
         }
@@ -119,21 +120,32 @@
             margin: 0 auto;
         }
 
+        .experience-timeline .description {
+            font-size: .8rem;
+            margin: 0 2rem;
+        }
+
         .experience-item {
+            margin: 2rem;
             padding: 2rem;
-            margin-bottom: 2rem;
             border-radius: 8px; 
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border: 1px solid var(--bg-dark-blue-variant); 
         }
 
         .experience-item ul {
             margin-top: 1rem;
         }
+        
         .experience-item li {
             color: var(--text-light-blue);
             font-size: .8rem;
             margin: 0 1rem;
+        }
+
+        .experience-add {
+            font-size: .8rem;
+            margin-top: 1rem;
         }
 
         .skills-content {
@@ -152,7 +164,7 @@
             padding: 2rem;
             border-radius: 8px; 
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border: 1px solid #253d5d;
+            border: 1px solid var(--bg-light-blue);
         }
 
         .skill-category h3 {
@@ -189,15 +201,48 @@
             height: 36px;
         }
 
+        .project-card {
+            margin: 2rem;
+            padding: 2rem;
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--bg-light-blue);
+        }
+
         .project-container {
             max-width: 900px;
             margin: 0 auto;
         }
         
+        .project-image {
+            display: flex;
+            justify-content: center;
+        }
+
         .project-image img {
             border-radius: 1rem;
             width: 84px;
             height: 84px;
+        }
+
+        .project-content .description {
+            margin: 1rem 0;
+        }
+
+        .project-tags {
+            margin: 1.5rem 0;
+        }
+
+        .project-tags .tag {
+            padding: .6rem;
+            border-radius: 18px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: var(--bg-light-blue);
+            font-size: .8rem;
+        }
+
+        .project-link {
+            font-size: .8rem;
         }
 
         .contact-item {
@@ -280,6 +325,7 @@
                         <ul>
                             <li>Kotlin</li>
                             <li>Java</li>
+                            <li>Swift</li>
                             <li>Python</li>
                             <li>C#</li>
                             <li>TypeScript</li>
@@ -332,7 +378,7 @@
                         <li>Mentored engineers and improved collaboration between platform and product teams</li>
                         <li>Advocated for modularization on YAZIO's KMP module for feature sharing</li>
                     </ul>
-                    <div>
+                    <div class="experience-add">
                         Previously: Android Tech Lead (Dec 2022 - Jan 2024) - Drove refactoring & Compose migration.
                     </div>
                 </div>
@@ -384,13 +430,15 @@
                         <img src="imgs/breev.png" />
                     </div>
                     <div class="project-content">
-                        <p class="project-description description">
+                        <p class="description">
                             BREEV is a lightweight cross-platform breathing app built with Kotlin Multiplatform and Compose Multiplatform, designed for fast performance and a clean, distraction-free UI. It provides smooth animated breathing cycles, and instant 1-minute sessions—perfect for quick resets throughout the day. Focused, minimal, and engineered to run consistently across iOS and Android.
                         </p>
                         <div class="project-tags">
                             <span class="tag">Kotlin</span>
                             <span class="tag">Jetpack Compose</span>
                             <span class="tag">KMP</span>
+                            <span class="tag">Android</span>
+                            <span class="tag">iOS</span>
                         </div>
                         <div class="text-links">
                             <a href="#" class="project-link">View Details →</a>
