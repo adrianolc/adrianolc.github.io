@@ -200,16 +200,13 @@ nav {
     margin: 1rem 0;
 }
 
-.project-tags {
-    margin: 1.5rem 0;
-}
-
 .project-tags .tag {
-    padding: .6rem;
-    border-radius: 18px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
     background: var(--bg-light-blue);
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
     font-size: .8rem;
+    margin-bottom: 1rem;
 }
 
 .project-link {
