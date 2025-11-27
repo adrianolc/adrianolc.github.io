@@ -226,6 +226,13 @@ nav {
     display: none;
 }
 
+@media screen and (max-width: 950px) {
+    .hero-image-container img {
+        height: 300px;
+        width: auto;
+    }
+}
+
 @media screen and (max-width: 600px) {
     header {
         justify-content: center;
