@@ -166,10 +166,9 @@ nav {
     text-decoration: none;
 }
 
-.btn svg {
-    fill: var(--text-light);
-    width: 36px;
-    height: 36px;
+.btn i {
+    color: var(--text-light);
+    font-size: 3em;
 }
 
 .project-card {
