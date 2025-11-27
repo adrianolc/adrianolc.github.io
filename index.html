@@ -22,6 +22,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             line-height: 1.6;
             color: var(--text-light);
+            background: var(--bg-dark-blue);
         }
 
         header {
@@ -65,13 +66,13 @@
         .container {
             background: var(--bg-dark-blue);
             margin: 0 auto;
-            padding: 2rem 20px;
+            padding: 1rem 2rem;
         }
 
         .container-even {
             background: var(--bg-dark-blue-variant);
             margin: 0 auto;
-            padding: 2rem 20px;
+            padding: 1rem 2rem;
         }
 
         .hero {
@@ -187,8 +188,9 @@
             height: 84px;
         }
 
-        .contact-grid {
+        .contact-item {
             text-align: center;
+            margin-bottom: 1rem;
         }
 
         .copyright {
@@ -407,21 +409,19 @@
     <section id="contact">
         <div class="container">
             <h2 class="section-title">Let's connect</h2>
-            <div class="contact-grid">
+            <div class="contact-item">
                 <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
             </div>
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <a href="mailto:adrianolcx@gmail.com" class="btn">
-                        <svg><use xlink:href="#email-icon"></use></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/adriano-cordeiro-eng/" target="_blank" class="btn">
-                        <svg><use xlink:href="#linkedin-icon"></use></svg>
-                    </a>
-                    <a href="https://github.com/adrianolc" target="_blank" class="btn">
-                        <svg><use xlink:href="#github-icon"></use></svg>
-                    </a>
-                </div>
+            <div class="contact-item">
+                <a href="mailto:adrianolcx@gmail.com" class="btn">
+                    <svg><use xlink:href="#email-icon"></use></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/adriano-cordeiro-eng/" target="_blank" class="btn">
+                    <svg><use xlink:href="#linkedin-icon"></use></svg>
+                </a>
+                <a href="https://github.com/adrianolc" target="_blank" class="btn">
+                    <svg><use xlink:href="#github-icon"></use></svg>
+                </a>
             </div>
         </div>
     </section>
