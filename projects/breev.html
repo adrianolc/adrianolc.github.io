@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="../style/main.css" />
     <script src="https://kit.fontawesome.com/30a962be43.js" crossorigin="anonymous"></script>
     <style>
+        body {
+            background-color: var(--mist-white);
+            color: var(--text-gray);
+        }
+
         .hero-header {
             position: relative;
             min-height: 60vh;
@@ -45,6 +50,14 @@
             padding: 0 2rem;
         }
 
+        .content h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        section .content {
+            padding: 4rem 0;
+        }
 
         .hero-header .content {
             min-height: 60vh;
@@ -71,23 +84,6 @@
 
         .hero-header .content h1 .bold {
             font-weight: 700;
-        }
-
-        .hero-header .content p {
-            color: #424242;
-        }
-
-        .logo {
-            position: relative;
-            top: -42px;
-            z-index: 10;
-        }
-
-        .logo img {
-            box-shadow: 0 2rem 4rem rgba(0,0,0,0.5);
-            border-radius: 1rem;
-            width: 84px;
-            height: 84px;
         }
 
         .store {
@@ -138,6 +134,32 @@
             vertical-align: middle;
             margin-left: .8rem;
         }
+
+        #download img {
+            height: 48px;
+            width: auto;
+        }
+
+        #download a {
+            text-decoration: none;
+        }
+
+        #key_features img {
+            height: 500px;
+            width: auto;
+        }
+
+        #key_features .screenshots {
+            text-align: center;
+        }
+
+        footer {
+            background-color: var(--bg-dark-blue);
+            text-align: center;
+            font-size: .8rem;
+            padding: 1rem;
+            color: var(--mist-white);
+        }
         
     </style>
 </head>
@@ -172,10 +194,109 @@
             </div>
         </div>
     </header>
+
     <section>
-        <div class="logo content">
-            <img src="../imgs/breev.png" />
+        <div class="content">
+            <h2>What is Take a BREEV?</h2>
+            <div>
+                Take a Breath is a minimalist breathing companion designed to help you slow down and reconnect with yourself. With clean visuals, smooth breathing animations, and calming rhythm guides, the app creates a peaceful space to release stress and regain focus in just one minute.
+            </div>
         </div>
     </section>
+
+    <section>
+        <div class="content">
+            <h2>Why It Helps?</h2>
+            <div>
+                Stress builds up quietly — but so does calm.
+                A few intentional breaths can reset your mind, lower tension, and boost clarity.
+                The app guides you through gentle breathing cycles designed to:
+
+                Reduce stress and anxiety
+
+                Improve focus and mental clarity
+
+                Promote relaxation and emotional balance
+
+                Support mindful habits during busy days
+            </div>
+        </div>
+    </section>
+
+
+    <section id="key_features">
+        <div class="content">
+            <h2>Key Features</h2>
+            <div>
+                1-Minute Sessions
+                Perfect when you need a quick reset.
+
+                Guided Animated Breathing
+                Smooth, intuitive visuals that naturally sync with your breath.
+
+                Simple & Minimalist Design
+                No clutter. No distractions. Pure calm.
+
+                Customizable Rhythms
+                Choose the breathing pace that works best for you.
+
+                Daily Use Friendly
+                Build a habit of small mindful breaks that make a big difference.
+            </div>
+            <div class="screenshots">
+                <img src="../imgs/phone_perspective.png" />
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <h2>Who Is It For?</h2>
+            <div>
+                Anyone looking for a small, peaceful pause in a busy day:
+
+                High-stress workers
+
+                Students
+
+                People who want to build mindfulness habits
+
+                Anyone needing a moment to breathe
+            </div>
+        </div>
+    </section>
+
+    <section id="download">
+        <div class="content">
+            <h2>Your Moment of Calm</h2>
+            <div>
+                Wherever you are — at work, on the bus, preparing for sleep — BREEV brings you a quiet moment, right when you need it most.
+            </div>
+            <div style="text-align: center;">
+                <a href="#">
+                    <img src="../imgs/apple_store.png" />
+                </a>
+                <a href="#">
+                    <img src="../imgs/google_play_store.webp" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="content">
+            <h2>Contact</h2>
+            <div>
+                EMAIL
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright content">
+            <p>&copy; 2025 Adriano Cordeiro. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
