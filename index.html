@@ -16,6 +16,7 @@
             --bg-dark-blue: #05080c;
             --bg-dark-blue-variant: #17263a;
             --text-light: #EAF6F6;
+            --text-light-blue: #bccde4;
         }
 
         body {
@@ -46,19 +47,19 @@
             font-size: .8rem;
         }
 
-        .nav-links a {
+        .text-links a {
             text-decoration: none;
             color: var(--text-dark);
             font-weight: 500;
             transition: color 0.3s;
         }
 
-        .nav-links a:hover {
+        .text-links a:hover {
             color: var(--primary);
         }
 
         .section-title {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 3rem;
             text-align: center;
         }
@@ -66,7 +67,11 @@
         .container {
             background: var(--bg-dark-blue);
             margin: 0 auto;
-            padding: 1rem 2rem;
+            padding: 2rem 2rem;
+        }
+
+        .description {
+            color: var(--text-light-blue);
         }
 
         .container-even {
@@ -76,13 +81,13 @@
         }
 
         .hero {
-            min-height: 60vh;
+            min-height: 100vh;
             display: flex;
             align-items: center; 
         }
 
         .hero-grid {
-            max-width: 900px;
+            max-width: 1300px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -119,18 +124,16 @@
             margin-bottom: 2rem;
             border-radius: 8px; 
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-            border: 1px solid #ddd; 
+            border: 1px solid var(--bg-dark-blue-variant); 
         }
 
-        .experience-timeline a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 500;
-            transition: color 0.3s;
+        .experience-item ul {
+            margin-top: 1rem;
         }
-
-        .experience-timeline a:hover {
-            color: var(--primary);
+        .experience-item li {
+            color: var(--text-light-blue);
+            font-size: .8rem;
+            margin: 0 1rem;
         }
 
         .skills-content {
@@ -147,9 +150,9 @@
         .skill-category {
             margin: 2rem;
             padding: 2rem;
-            border-radius: 8px; /* Rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-            border: 1px solid #ddd; /* Light border */
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #253d5d;
         }
 
         .skill-category h3 {
@@ -161,9 +164,13 @@
             list-style-type: none;
         }
 
+        .skill-category li {
+            color: var(--text-light-blue);
+            font-size: .8rem;
+        }
+
         .skills-text {
             font-size: 1rem; 
-            color: var(--text-light); 
             margin-bottom: 1.5rem;
             text-align: center;
         }
@@ -213,7 +220,7 @@
     <!-- Navigation -->
     <header>
         <nav class="header">
-            <ul class="nav-links">
+            <ul class="nav-links text-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skils">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -230,7 +237,7 @@
                 <div class="content hero-content">
                     <p class="subtitle">Senior Android Engineer | Engineering Manager</p>
                     <h1>Adriano Cordeiro</h1>
-                    <p>Building high-impact mobile platforms with clean architecture. Specializing in Android, Kotlin and KMP.</p>
+                    <p class="description">Building high-impact mobile platforms with clean architecture. Specializing in Android, Kotlin and KMP.</p>
                     <div class="cta-buttons">
                         <a href="https://www.linkedin.com/in/adriano-cordeiro-eng/" class="btn" target="_blank">
                             <svg><use xlink:href="#linkedin-icon"></use></svg>
@@ -252,7 +259,7 @@
     <section id="skils">
         <div class="container-even">
             <h2 class="section-title">Technical Expertise</h2>
-            <p class="skills-text">
+            <p class="skills-text description">
                 Over a decade of hands-on experience in Android application development and mobile platform architecture.
             </p>
             <div class="skills-content">
@@ -360,7 +367,7 @@
                     </ul>
                 </div>
 
-                <div>
+                <div class="text-links description">
                     Previous roles at OLX Group (2018-2019) and Vaniday (2015-2017). Full history available on <a href="https://www.linkedin.com/in/adriano-cordeiro-eng/" target="_blank">LinkedIn.</a>
                 </div>
             </div>
@@ -377,7 +384,7 @@
                         <img src="imgs/breev.png" />
                     </div>
                     <div class="project-content">
-                        <p class="project-description">
+                        <p class="project-description description">
                             BREEV is a lightweight cross-platform breathing app built with Kotlin Multiplatform and Compose Multiplatform, designed for fast performance and a clean, distraction-free UI. It provides smooth animated breathing cycles, and instant 1-minute sessions—perfect for quick resets throughout the day. Focused, minimal, and engineered to run consistently across iOS and Android.
                         </p>
                         <div class="project-tags">
@@ -385,7 +392,9 @@
                             <span class="tag">Jetpack Compose</span>
                             <span class="tag">KMP</span>
                         </div>
-                        <a href="#" class="project-link">View Project →</a>
+                        <div class="text-links">
+                            <a href="#" class="project-link">View Details →</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -396,7 +405,7 @@
     <section id="contact">
         <div class="container">
             <h2 class="section-title">Let's connect</h2>
-            <div class="contact-item">
+            <div class="contact-item description">
                 <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
             </div>
             <div class="contact-item">
