@@ -21,3 +21,11 @@ body {
     color: var(--text-light);
     background: var(--bg-dark-blue);
 }
+
+footer {
+    background-color: var(--bg-dark-blue);
+    text-align: center;
+    font-size: .8rem;
+    padding: 1rem;
+    color: var(--mist-white);
+}
