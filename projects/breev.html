@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="../style/main.css" />
     <style>
         .hero-header {
-            position: relative; /* Establishes a positioning context for the ::before */
+            position: relative;
             min-height: 60vh;
-            display: flex;
-            align-items: center;
-            overflow: hidden; /* Essential to crop the blurry edges */
-            /* text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Improves readability */
+            overflow: hidden;
+            overflow: hidden;
         }
 
         .hero-header::before {
@@ -42,22 +40,27 @@
         }
 
         .content {
-            margin: 2rem;
-            position: relative; 
-            z-index: 1; /* Ensures text stays on top */
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
         }
 
-        .content h1 {
+
+        .hero-header .content {
+            min-height: 60vh;
+            align-content: center;
+        }
+
+        .hero-header .content h1 {
             color: #1F2937;
             letter-spacing: .7rem;
         }
 
-        .content p {
+        .hero-header .content p {
             color: #1F2937;
         }
 
         .logo {
-            margin: 0 2rem;
             position: relative;
             top: -40px;
             z-index: 10;
@@ -79,8 +82,10 @@
             <p>A simple way to pause, relax, and reset.</p>
         </div>
     </header>
-    <div class="logo">
-        <img src="../imgs/breev.png" />
-    </div>
+    <section>
+        <div class="logo content">
+            <img src="../imgs/breev.png" />
+        </div>
+    </section>
 </body>
 </html>
