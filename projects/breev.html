@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/30a962be43.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background-color: var(--mist-white);
+            background-color: #FBFBFA;
             color: var(--text-gray);
         }
 
@@ -48,6 +48,10 @@
 
         section .content {
             padding: 4rem 0;
+        }
+
+        section:nth-child(odd) {
+            background-color: #F2F2F2;
         }
 
         .hero-header .content h1 {
@@ -159,6 +163,10 @@
         #key_features .screenshots {
             text-align: center;
         }
+
+        #key_features .screenshots img {
+            filter: drop-shadow(5px 5px 5px #222);
+        }
         
     </style>
 </head>
@@ -235,7 +243,6 @@
         </div>
     </section>
 
-
     <section id="key_features">
         <div class="content">
             <h2>Key Features</h2>
@@ -256,7 +263,8 @@
                 Build a habit of small mindful breaks that make a big difference.
             </div>
             <div class="screenshots">
-                <img src="../imgs/phone_perspective.png" />
+                <img src="../imgs/phone-take-a-breath.webp" />
+                <img src="../imgs/phone-inhale.webp" />
             </div>
         </div>
     </section>
