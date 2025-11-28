@@ -248,11 +248,11 @@ nav {
     }
 
     .hero h1 {
-        font-size: 2em;
+        font-size: 2.5rem;
     }
 
     .hero .subtitle {
-        font-size: .7em;
+        font-size: .8em;
     }
 
     .hero .description {
@@ -295,10 +295,6 @@ nav {
     .hero-grid {
         display: flex;
         justify-items: center;
-    }
-
-    .hero h1 {
-        font-size: 2.2rem;
     }
 
     .hero-image-container {
