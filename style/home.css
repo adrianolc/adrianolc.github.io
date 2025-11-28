@@ -109,7 +109,7 @@ section:nth-child(odd) {
 }
 
 .experience-timeline .description {
-    font-size: .8rem;
+    font-size: .9rem;
     margin: 0 2rem;
 }
 
@@ -127,12 +127,12 @@ section:nth-child(odd) {
 
 .experience-item li {
     color: var(--text-light-blue);
-    font-size: .8rem;
+    font-size: .9rem;
     margin: 0 1rem;
 }
 
 .experience-add {
-    font-size: .8rem;
+    font-size: .9rem;
     margin-top: 1rem;
 }
 
@@ -166,7 +166,7 @@ section:nth-child(odd) {
 
 .skill-category li {
     color: var(--text-light-blue);
-    font-size: .8rem;
+    /* font-size: .8rem; */
 }
 
 .skills-text {
