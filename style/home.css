@@ -64,7 +64,7 @@ nav {
 }
 
 .hero {
-    min-height: 100vh;
+    min-height: 85vh;
     display: flex;
     align-items: center; 
 }
@@ -239,7 +239,24 @@ nav {
 
 @media screen and (max-width: 880px) {
     .hero {
-        min-height: 80vh;
+        min-height: 75vh;
+    }
+
+    .hero-image-container img {
+        height: 300px;
+        width: auto;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero .subtitle {
+        font-size: .7em;
+    }
+
+    .hero .description {
+        font-size: .9em;
     }
 
     .skill-category {
@@ -260,23 +277,6 @@ nav {
         margin: 0;
         padding: 1.5rem;
     }
-
-    .hero-image-container img {
-        height: 300px;
-        width: auto;
-    }
-
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero .subtitle {
-        font-size: .7em;
-    }
-
-    .hero .description {
-        font-size: .9em;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -290,7 +290,7 @@ nav {
     }
 
     .hero {
-        min-height: 70vh;
+        min-height: 60vh;
     }
 
     .hero-grid {
