@@ -41,6 +41,14 @@ nav {
     color: var(--primary);
 }
 
+section {
+    background: var(--bg-dark-blue);
+}
+
+section:nth-child(odd) {
+    background: var(--bg-dark-blue-variant);
+}
+
 .section-title {
     font-size: 2rem;
     margin-bottom: 3rem;
@@ -48,19 +56,12 @@ nav {
 }
 
 .container {
-    background: var(--bg-dark-blue);
     margin: 0 auto;
     padding: 4rem 2rem;
 }
 
 .description {
     color: var(--text-light-blue);
-}
-
-.container-even {
-    background: var(--bg-dark-blue-variant);
-    margin: 0 auto;
-    padding: 4rem 2rem;
 }
 
 .hero {
