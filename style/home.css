@@ -94,6 +94,7 @@ nav {
     font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    color: var(--primary);
 }
 
 .hero .subtitle {
@@ -116,7 +117,7 @@ nav {
     padding: 2rem;
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--bg-dark-blue-variant); 
+    border: 1px solid var(--primary); 
 }
 
 .experience-item ul {
@@ -150,7 +151,7 @@ nav {
     padding: 2rem;
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--bg-light-blue);
+    border: 1px solid var(--primary);
 }
 
 .skill-category h3 {
@@ -191,7 +192,7 @@ nav {
     padding: 2rem;
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--bg-light-blue);
+    border: 1px solid var(--primary);
 }
 
 .project-container {
@@ -216,7 +217,7 @@ nav {
 
 .project-tags .tag {
     display: inline-block;
-    background: var(--bg-light-blue);
+    background: var(--primary-20);
     padding: 0.25rem 0.75rem;
     border-radius: 50px;
     font-size: .8rem;

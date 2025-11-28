@@ -5,7 +5,8 @@
 }
 
 :root {
-    --primary: #2563eb;
+    --primary: #af3dff;
+    --primary-20: #af3dff33;
     --bg-dark-blue: #05080c;
     --bg-dark-blue-variant: #17263a;
     --bg-light-blue: #253d5d;
