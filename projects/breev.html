@@ -12,7 +12,12 @@
             color: var(--text-gray);
         }
 
-        /* .hero-header::before {
+        .hero-header {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-grid::before {
             content: "";
             position: absolute;
             top: 0;
@@ -32,7 +37,7 @@
             transform: scale(1.3); 
             
             z-index: -1; 
-        } */
+        }
 
         .content {
             max-width: 900px;
@@ -49,9 +54,9 @@
             padding: 4rem 0;
         }
 
-        .hero-header {
+        /* .hero-header {
             background-color: #EBE1DA;
-        }
+        } */
 
         .hero-header .content h1 {
             color: #1F2937;
@@ -76,14 +81,10 @@
         }
 
         .hero-grid {
-            min-height: 60vh;
+            min-height: 50vh;
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
-
-        /* .hero-item {
-            border: 1px solid black;
-        } */
 
         .hero-brand {
             height: 100%;
@@ -197,7 +198,7 @@
                 </div>
                 <div class="hero-item">
                     <div class="hero-img">
-                        IMAGE
+                        <img src="../imgs/phone_perspective.webp" />
                     </div>
                 </div>
             </div>
