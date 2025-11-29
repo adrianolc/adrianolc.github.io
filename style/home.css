@@ -300,7 +300,7 @@ section:nth-child(odd) {
     }
 
     .hero {
-        min-height: 60vh;
+        min-height: 65vh;
     }
 
     .hero-grid {
@@ -313,7 +313,7 @@ section:nth-child(odd) {
     }
 
      .hero h1 {
-        font-size: 2rem;
+        font-size: 2em;
     }
 
 }
