@@ -54,6 +54,12 @@
             padding: 4rem 0;
         }
 
+        .screenshots img {
+            filter: drop-shadow(5px 5px 5px #222);
+            height: 500px;
+            width: auto;
+        }
+
         .hero-header .content h1 {
             color: var(--text-dark-gray);
             letter-spacing: .2rem;
@@ -161,17 +167,8 @@
             padding: 0 2rem;
         }
 
-        #key_features img {
-            height: 500px;
-            width: auto;
-        }
-
         #key_features .screenshots {
             text-align: center;
-        }
-
-        #key_features .screenshots img {
-            filter: drop-shadow(5px 5px 5px #222);
         }
 
         #download {
@@ -269,8 +266,13 @@
     <section id="what_is">
         <div class="content">
             <h2>What is Take a BREEV?</h2>
-            <div>
-                Take a Breath is a minimalist breathing companion designed to help you slow down and reconnect with yourself. With clean visuals, smooth breathing animations, and calming rhythm guides, the app creates a peaceful space to release stress and regain focus in just one minute.
+            <div class="content-grid">
+                <div class="content-item screenshots">
+                    <img src="../imgs/phone-take-a-breath.webp" />
+                </div>
+                <div class="content-item">
+Take a Breath is a minimalist breathing companion designed to help you slow down and reconnect with yourself. With clean visuals, smooth breathing animations, and calming rhythm guides, the app creates a peaceful space to release stress and regain focus in just one minute.
+                </div>
             </div>
         </div>
     </section>
@@ -314,7 +316,6 @@
                 Build a habit of small mindful breaks that make a big difference.
             </div>
             <div class="screenshots">
-                <img src="../imgs/phone-take-a-breath.webp" />
                 <img src="../imgs/phone-inhale.webp" />
             </div>
         </div>
