@@ -181,8 +181,20 @@
         }
         
         @media screen and (max-width: 1000px) {
-            .hero-img {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-item {
+                justify-items: center;
+            }
+
+            .hidden {
                 display: none;
+            }
+
+            .hero-brand {
+                text-align: center;
             }
         }
 
@@ -224,7 +236,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero-item">
+                <div class="hero-item hidden">
                     <div class="hero-img">
                         <img src="../imgs/mockup-breev.webp" />
                     </div>
