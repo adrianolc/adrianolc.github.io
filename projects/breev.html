@@ -21,6 +21,7 @@
         .content h2 {
             text-align: center;
             margin-bottom: 2rem;
+            font-size: 3.3em;
         }
 
         .hero-header {
@@ -51,6 +52,29 @@
 
         section .content {
             padding: 4rem 0;
+        }
+
+        /* .content .description {
+            border: 1px solid black;
+        } */
+
+        .content .description h4 {
+            font-size: 2.2em;
+            line-height: 1;
+            margin-left: 2rem;
+            display: list-item;
+        }
+
+        .content .description p {
+            margin-bottom: 1rem;
+            font-size: 1.8em;
+            font-weight: 100;
+        }
+
+        .content .description ul {
+            margin-left: 3rem;
+            font-size: 1.8em;
+            font-weight: 100;
         }
 
         .screenshots img {
@@ -180,6 +204,10 @@
             text-align: center;
         }
 
+        #key_features .content .description p {
+            margin-left: 2rem;
+        }
+
         #download {
             min-height: 40vh;   
         }
@@ -240,8 +268,25 @@
             .screenshots img {
                 height: 300px;
             }
-        }
 
+            .content h2 {
+                font-size: 2.5em;
+            }
+
+            .content .description h4 {
+                font-size: 1.7em;
+                margin-left: 2rem;
+            }
+
+            .content .description p {
+                font-size: 1.3em;
+            }
+
+            .content .description ul {
+                margin-left: 2rem;
+                font-size: 1.3em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -291,13 +336,17 @@
 
     <section id="what_is">
         <div class="content">
-            <h2>What is Take a BREEV?</h2>
+            <h2>What is BREEV?</h2>
             <div class="content-grid">
                 <div class="content-item screenshots">
                     <img src="../imgs/mockup-breath.webp" />
                 </div>
-                <div class="content-item">
-                    Take a Breath is a minimalist breathing companion designed to help you slow down and reconnect with yourself. With clean visuals, smooth breathing animations, and calming rhythm guides, the app creates a peaceful space to release stress and regain focus in just one minute.
+                <div class="content-item description">
+                    <p>
+                        BREEV is a minimalist breathing companion designed to help you slow down and reconnect with yourself. 
+                        With clean visuals, smooth breathing animations, and calming rhythm guides, 
+                        the app creates a peaceful space to release stress and regain focus in just one minute.
+                    </p>
                 </div>
             </div>
         </div>
@@ -307,18 +356,22 @@
         <div class="content">
             <h2>Why It Helps?</h2>
             <div class="content-grid">
-                <div class="content-item">
-                    Stress builds up quietly — but so does calm.
-                    A few intentional breaths can reset your mind, lower tension, and boost clarity.
-                    The app guides you through gentle breathing cycles designed to:
-
-                    Reduce stress and anxiety
-
-                    Improve focus and mental clarity
-
-                    Promote relaxation and emotional balance
-
-                    Support mindful habits during busy days
+                <div class="content-item description">
+                    <p>
+                        Stress builds up quietly — but so does calm.
+                    </p>
+                    <p>
+                            A few intentional breaths can reset your mind, lower tension, and boost clarity.
+                    </p>
+                    <p>
+                        The app guides you through gentle breathing cycles designed to:
+                    </p>
+                    <ul>
+                        <li>Reduce stress and anxiety</li>
+                        <li>Improve focus and mental clarity</li>
+                        <li>Promote relaxation and emotional balance</li>
+                        <li>Support mindful habits during busy days</li>
+                    </ul>
                 </div>
                 <div class="content-item screenshots align-left">
                     <img src="../imgs/mockup-inhale.webp" />
@@ -329,25 +382,22 @@
 
     <section id="key_features">
         <div class="content">
-            <h2>Key Features</h2>
-            <div>
-                1-Minute Sessions
-                Perfect when you need a quick reset.
+            <h2>How it works</h2>
+            <div class="description">
+                <h4>1-Minute Sessions</h4> 
+                <p>Perfect when you need a quick reset.</p> 
 
-                Guided Animated Breathing
-                Smooth, intuitive visuals that naturally sync with your breath.
+                <h4>Guided Animated Breathing</h4> 
+                <p>Smooth, intuitive visuals that naturally sync with your breath.</p>
 
-                Simple & Minimalist Design
-                No clutter. No distractions. Pure calm.
+                <h4>Simple & Minimalist Design</h4>
+                <p>No clutter. No distractions. Pure calm.</p>
 
-                Customizable Rhythms
-                Choose the breathing pace that works best for you.
+                <!-- <h4>Customizable Rhythms</h4>
+                <p>Choose the breathing pace that works best for you.</p> -->
 
-                Daily Use Friendly
-                Build a habit of small mindful breaks that make a big difference.
-            </div>
-            <div class="screenshots">
-                <img src="../imgs/phone-inhale.webp" />
+                <h4>Daily Use Friendly</h4>
+                <p>Build a habit of small mindful breaks that make a big difference.</p>
             </div>
         </div>
     </section>
