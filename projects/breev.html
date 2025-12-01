@@ -13,7 +13,7 @@
         }
 
         .content {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -26,6 +26,14 @@
         .hero-header {
             position: relative;
             overflow: hidden;
+        }
+
+        .hero-grid {
+            max-width: 1400px;
+            min-height: 100vh;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
 
         .hero-grid::before {
@@ -82,33 +90,27 @@
             width: auto;
         }
 
-        .hero-header .content h1 {
+        .hero-header h1 {
             color: var(--text-dark-gray);
             letter-spacing: .2rem;
             font-size: 8em;
             text-shadow: 0 4px 8px rgba(0,0,0,0.5);
         }
 
-        .hero-header .content h1 .thin {
+        .hero-header h1 .thin {
             font-weight: 100;
         }
 
-        .hero-header .content h1 .light {
+        .hero-header h1 .light {
             font-weight: 300;
         }
 
-        .hero-header .content h1 .medium {
+        .hero-header h1 .medium {
             font-weight: 500;
         }
 
-        .hero-header .content h1 .bold {
+        .hero-header h1 .bold {
             font-weight: 700;
-        }
-
-        .hero-grid {
-            min-height: 100vh;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
         }
 
         .hero-brand {
@@ -194,9 +196,10 @@
         }
 
         #key_features {
-            background-color: var(--gallery-gray);
+            background-color: var(--primary-20);
             border-radius: 4rem;
             padding: 0 2rem;
+            margin: 0 10rem;
         }
 
         #key_features .screenshots {
@@ -208,7 +211,10 @@
         }
 
         #download {
-            min-height: 40vh;   
+            min-height: 40vh; 
+            background-color: var(--appricot-20);  
+            border-radius: 4rem 4rem 0 0;
+            margin: 0 10rem;
         }
 
         #download .content .description p {
@@ -258,6 +264,10 @@
             .store {
                 justify-content: center;
             }
+
+            #key_features, #download {
+                margin: 0 2rem;
+            }
         }
 
         @media screen and (max-width: 765px) {
@@ -265,7 +275,7 @@
                 margin: 0 1rem;
             }
 
-            .hero-header .content h1 {
+            .hero-header h1 {
                 font-size: 3em;
                 text-shadow: 0 2px 4px rgba(0,0,0,0.5);
             }
@@ -300,44 +310,42 @@
 </head>
 <body>
     <header class="hero-header">
-        <div class="content">
-            <div class="hero-grid">
-                <div class="hero-item">
-                    <div class="hero-brand">
-                        <div>
-                            <h1>
-                                <span class="thin">B</span>
-                                <span class="light">R</span>
-                                <span class="medium">E</span>
-                                <span class="bold">E</span>
-                                <span class="bold">V</span>
-                            </h1>
-                            <p>A simple way to pause, relax, and reset.</p>
-                            <div class="store">
-                                <a href="#" target="_blank" class="tag">
-                                    <span class="icon">
-                                        <i class="fa-brands fa-apple"></i>
-                                    </span>
-                                    <span class="btn-text">
-                                        Apple Store
-                                    </span> 
-                                </a>
-                                <a href="https://play.google.com/store/apps/details?id=com.breev.takeabreath" target="_blank" class="tag">
-                                    <span class="icon">
-                                        <i class="fa-brands fa-android"></i>
-                                    </span>
-                                    <span class="btn-text">
-                                        Google Play
-                                    </span>
-                                </a>
-                            </div>
+        <div class="hero-grid">
+            <div class="hero-item">
+                <div class="hero-brand">
+                    <div>
+                        <h1>
+                            <span class="thin">B</span>
+                            <span class="light">R</span>
+                            <span class="medium">E</span>
+                            <span class="bold">E</span>
+                            <span class="bold">V</span>
+                        </h1>
+                        <p>A simple way to pause, relax, and reset.</p>
+                        <div class="store">
+                            <a href="#" target="_blank" class="tag">
+                                <span class="icon">
+                                    <i class="fa-brands fa-apple"></i>
+                                </span>
+                                <span class="btn-text">
+                                    Apple Store
+                                </span> 
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.breev.takeabreath" target="_blank" class="tag">
+                                <span class="icon">
+                                    <i class="fa-brands fa-android"></i>
+                                </span>
+                                <span class="btn-text">
+                                    Google Play
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="hero-item hidden-for-small-screen">
-                    <div class="hero-img">
-                        <img src="../imgs/mockup-breev.webp" />
-                    </div>
+            </div>
+            <div class="hero-item hidden-for-small-screen">
+                <div class="hero-img">
+                    <img src="../imgs/mockup-breev.webp" />
                 </div>
             </div>
         </div>
@@ -443,15 +451,6 @@
                 <a href="https://play.google.com/store/apps/details?id=com.breev.takeabreath" target="_blank">
                     <img src="../imgs/google_play_store.webp" />
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="content">
-            <h2>Contact</h2>
-            <div>
-                EMAIL
             </div>
         </div>
     </section>
