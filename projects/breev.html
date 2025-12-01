@@ -188,11 +188,16 @@
             min-height: 40vh;   
         }
         
-        .content-grid .content-item {
+        /* .content-grid .content-item {
             border: 1px solid black;
+        } */
+
+        .align-left {
+            display: flex; 
+            justify-content: end;
         }
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1200px) {
             .hero-grid::before { 
                 transform: scale(1.5);
             }
@@ -311,7 +316,7 @@
 
                     Support mindful habits during busy days
                 </div>
-                <div class="content-item screenshots">
+                <div class="content-item screenshots align-left">
                     <img src="../imgs/mockup-inhale.webp" />
                 </div>
             </div>
