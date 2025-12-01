@@ -20,7 +20,7 @@
         .content h2 {
             text-align: center;
             margin-bottom: 2rem;
-            font-size: 4em;
+            font-size: 5em;
         }
 
         .hero-header {
@@ -65,16 +65,10 @@
             border: 1px solid black;
         } */
 
-        .content .description h4 {
-            font-size: 2.2em;
-            line-height: 1;
-            margin-left: 2rem;
-            display: list-item;
-        }
 
         .content .description p {
             margin-bottom: 1rem;
-            font-size: 1.8em;
+            font-size: 2em;
             font-weight: 100;
         }
 
@@ -202,6 +196,17 @@
             margin: 0 10rem;
         }
 
+        #key_features h2 {
+            color: #3D2B39;
+        }
+
+        #key_features h4 {
+            color: #3D2B39;
+            font-size: 2.2em;
+            line-height: 1;
+            margin-left: 2rem;
+        }
+
         #key_features .screenshots {
             text-align: center;
         }
@@ -241,7 +246,19 @@
             justify-content: end;
         }
 
+        .text-left {
+            text-align: end;
+        }
+
         @media screen and (max-width: 1200px) {
+            .content h2 {
+                font-size: 4em;
+            }
+
+            .content .description p {
+                font-size: 1.8em;
+            }
+
             .hero-grid::before { 
                 transform: scale(1.5);
             }
@@ -386,7 +403,7 @@
                         Stress builds up quietly — but so does calm.
                     </p>
                     <p>
-                            A few intentional breaths can reset your mind, lower tension, and boost clarity.
+                        A few intentional breaths can reset your mind, lower tension, and boost clarity.
                     </p>
                     <p>
                         The app guides you through gentle breathing cycles designed to:
@@ -409,20 +426,27 @@
         <div class="content">
             <h2>How it works</h2>
             <div class="description">
-                <h4>1-Minute Sessions</h4> 
-                <p>Perfect when you need a quick reset.</p> 
+                <div>
+                    <h4>1-Minute Sessions</h4> 
+                    <p>Perfect when you need a quick reset.</p> 
+                </div>
 
-                <h4>Guided Animated Breathing</h4> 
-                <p>Smooth, intuitive visuals that naturally sync with your breath.</p>
+                <div class="text-left">
+                    <h4>Guided Animated Breathing</h4> 
+                    <p>Smooth, intuitive visuals that naturally sync with your breath.</p>
+                </div>
 
-                <h4>Simple & Minimalist Design</h4>
-                <p>No clutter. No distractions. Pure calm.</p>
-
+                <div>
+                    <h4>Simple & Minimalist Design</h4>
+                    <p>No clutter. No distractions. Pure calm.</p>
+                </div>
                 <!-- <h4>Customizable Rhythms</h4>
                 <p>Choose the breathing pace that works best for you.</p> -->
 
-                <h4>Daily Use Friendly</h4>
-                <p>Build a habit of small mindful breaks that make a big difference.</p>
+                <div class="text-left">
+                    <h4>Daily Use Friendly</h4>
+                    <p>Build a habit of small mindful breaks that make a big difference.</p>
+                </div>
             </div>
         </div>
     </section>
