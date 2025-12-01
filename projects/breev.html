@@ -59,10 +59,10 @@
         }
 
         .hero-header .content h1 {
-            color: #1F2937;
+            color: var(--text-dark-gray);
             letter-spacing: .2rem;
-            font-size: 3em;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            font-size: 8em;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.5);
         }
 
         .hero-header .content h1 .thin {
@@ -199,6 +199,11 @@
         }
 
         @media screen and (max-width: 765px) {
+            .hero-header .content h1 {
+                font-size: 3em;
+                text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            }
+            
             .hero-brand p {
                 font-size: 1.2em;
             }
