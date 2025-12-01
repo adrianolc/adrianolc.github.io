@@ -60,11 +60,6 @@
             width: auto;
         }
 
-        .content-grid {
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-        }
-
         .hero-header .content h1 {
             color: var(--text-dark-gray);
             letter-spacing: .2rem;
@@ -155,6 +150,16 @@
         .store .btn-text {
             vertical-align: middle;
             margin-left: .8rem;
+        }
+
+        #what_is .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        #what_helps .content-grid {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
         }
 
         #download img {
@@ -285,18 +290,23 @@
     <section id="what_helps">
         <div class="content">
             <h2>Why It Helps?</h2>
-            <div>
-                Stress builds up quietly — but so does calm.
-                A few intentional breaths can reset your mind, lower tension, and boost clarity.
-                The app guides you through gentle breathing cycles designed to:
+            <div class="content-grid">
+                <div class="content-item">
+                    Stress builds up quietly — but so does calm.
+                    A few intentional breaths can reset your mind, lower tension, and boost clarity.
+                    The app guides you through gentle breathing cycles designed to:
 
-                Reduce stress and anxiety
+                    Reduce stress and anxiety
 
-                Improve focus and mental clarity
+                    Improve focus and mental clarity
 
-                Promote relaxation and emotional balance
+                    Promote relaxation and emotional balance
 
-                Support mindful habits during busy days
+                    Support mindful habits during busy days
+                </div>
+                <div class="contact-item screenshots">
+                    <img src="../imgs/mockup-inhale.webp" />
+                </div>
             </div>
         </div>
     </section>
