@@ -201,10 +201,38 @@
         }
 
         #key_features {
-            background-color: var(--primary-20);
-            border-radius: 4rem;
+            /* background-color: var(--primary-20); */
+            /* border-radius: 4rem; */
             padding: 0 2rem;
             margin: 0 10rem;
+        }
+
+        #key_features #grid {
+            display: grid;
+            height: 55vh;
+            grid-template-columns: 1fr 1fr;
+            gap: .8rem;
+        }
+
+        #key_features #grid .item {
+            /* border: 1px solid black; */
+        }
+
+        #key_features #grid .item:nth-child(even) {
+            display: flex;
+            align-items: end;
+        }
+
+        #key_features #grid .item .appricot {
+            border-radius: 3rem;
+            background-color: var(--appricot-20);
+            padding: 2rem;
+        }
+
+        #key_features #grid .item .lavender {
+            border-radius: 3rem;
+            background-color: var(--primary-20);
+            padding: 2rem;
         }
 
         #key_features h2 {
@@ -222,8 +250,9 @@
             text-align: center;
         }
 
-        #key_features .content .description p {
-            margin-left: 2rem;
+        #key_features .content #grid p {
+            line-height: 1.2;
+            margin-top: 1.2rem;
         }
 
         #download {
@@ -351,6 +380,10 @@
                 margin-left: 2rem;
                 font-size: 1.3em;
             }
+            #key_features #grid {
+                grid-template-columns: 1fr;
+                height: 100%;
+            }
         }
     </style>
 </head>
@@ -414,31 +447,39 @@
             </div>
         </div>
     </section>
-    
+
     <section id="key_features">
         <div class="content">
             <h2>How it works</h2>
-            <div class="description">
-                <div>
-                    <h4>1-Minute Sessions</h4> 
-                    <p>Perfect when you need a quick reset.</p> 
+            <div id="grid" class="description">
+                <div class="item">
+                    <div class="top lavender">
+                        <h4>1-Minute Sessions</h4> 
+                        <p>Perfect when you need a quick reset.</p> 
+                    </div>
                 </div>
 
-                <div class="text-left">
-                    <h4>Guided Animated Breathing</h4> 
-                    <p>Smooth, intuitive visuals that naturally sync with your breath.</p>
+                <div class="item">
+                    <div class="top appricot">
+                        <h4>Guided Animated Breathing</h4> 
+                        <p>Smooth, intuitive visuals that naturally sync with your breath.</p>
+                    </div>
                 </div>
 
-                <div>
-                    <h4>Simple & Minimalist Design</h4>
-                    <p>No clutter. No distractions. Pure calm.</p>
+                <div class="item">
+                    <div class="appricot">
+                        <h4>Simple & Minimalist Design</h4>
+                        <p>No clutter. No distractions. Pure calm.</p>
+                    </div>
                 </div>
                 <!-- <h4>Customizable Rhythms</h4>
                 <p>Choose the breathing pace that works best for you.</p> -->
 
-                <div class="text-left">
-                    <h4>Daily Use Friendly</h4>
-                    <p>Build a habit of small mindful breaks that make a big difference.</p>
+                <div class="item">
+                    <div class="bottom lavender">
+                        <h4>Daily Use Friendly</h4>
+                        <p>Build a habit of small mindful breaks that make a big difference.</p>
+                    </div>
                 </div>
             </div>
         </div>
