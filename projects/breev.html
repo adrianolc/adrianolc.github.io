@@ -193,7 +193,6 @@
         #what_is .content-grid {
             display: grid;
             grid-template-columns: 1fr 3fr;
-            /* justify-items: center; */
         }
 
         #what_is .content-grid .description p {
@@ -203,7 +202,6 @@
         #what_helps .content-grid {
             display: grid;
             grid-template-columns: 3fr 1fr;
-            /* justify-items: center; */
         }
 
         #what_helps .content-grid ul {
@@ -398,6 +396,18 @@
                 font-size: 1.3em;
             }
 
+            #what_helps .content-grid, #what_is .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .content-grid .screenshots {
+                padding: .7rem;
+            }
+
+            .content-item {
+                justify-content: center;
+            }
+
             #key_features #grid {
                 grid-template-columns: 1fr;
             }
@@ -559,7 +569,15 @@
                     </div>
                 </div>
                 <div class="content-item screenshots align-left">
-                    <img src="../imgs/mockup-inhale.webp" />
+                    <img 
+                    src="../imgs/mockup-inhale.webp" 
+                    srcset="
+                        ../imgs/phone-inhale.webp 400w,
+                        ../imgs/mockup-inhale.webp 650w"
+                    sizes="(max-width: 300px) 400px,
+                            650px"
+                    alt=""
+                    />
                 </div>
             </div>
         </div>
