@@ -276,10 +276,24 @@
             justify-content: center;
         }
     
-        #contact {
-            min-height: 40vh;   
+        .contact {
+            padding-bottom: 2rem;
+            text-align: start;
         }
         
+        .contact a {
+            color: var(--mist-white);
+            font-size: 1.2em;
+            text-decoration: none;
+            margin: 0 .5rem;
+        }
+
+        .contact a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+
         /* .content-grid .content-item {
             border: 1px solid black;
         } */
@@ -580,8 +594,12 @@
     </section>
 
     <footer>
+        <div class="contact">
+            <a href="mailto:stnclbyte@gmail.com">Contact</a>
+            <a href="../breev_policy.html">Privacy Policy</a>
+        </div>
         <div class="copyright">
-            <p>&copy; 2025 Adriano Cordeiro. All rights reserved.</p>
+            <p>&copy; 2025 STNCL Byte. All rights reserved.</p>
         </div>
     </footer>
 </body>
