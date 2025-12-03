@@ -23,6 +23,16 @@
             font-size: 5em;
         }
 
+        .appricot {
+            background-color: var(--appricot-20);
+            color: #362B3D;
+        }
+
+        .lavender {
+            background-color: var(--primary-20);
+            color: #3D2B39;
+        }
+
         .hero-header {
             position: relative;
             overflow: hidden;
@@ -200,53 +210,35 @@
             text-decoration: none;
         }
 
-        #key_features {
-            /* background-color: var(--primary-20); */
-            /* border-radius: 4rem; */
-            padding: 0 2rem;
-            margin: 0 10rem;
+        #key_features .content {
+            justify-items: center;
         }
 
         #key_features #grid {
             display: grid;
-            height: 55vh;
+            height: 100%;
             grid-template-columns: 1fr 1fr;
-            gap: .8rem;
+            gap: .5rem;
+            justify-items: center;
         }
 
         #key_features #grid .item {
             text-align: center;
-        }
-
-        #key_features #grid .item:nth-child(even) {
-            display: flex;
-            align-items: end;
-        }
-
-        #key_features #grid .item .appricot {
+            align-content: center;
             border-radius: 3rem;
-            background-color: var(--appricot-20);
+            width: 80%;
+            height: auto;
             padding: 2rem;
         }
 
-        #key_features #grid .item .lavender {
-            border-radius: 3rem;
-            background-color: var(--primary-20);
-            padding: 2rem;
-        }
-
-        #key_features h2 {
+        /* #key_features h2 {
             color: #3D2B39;
-        }
+        } */
 
         #key_features h4 {
-            color: #3D2B39;
-            font-size: 2.2em;
+            font-size: 2.4em;
             line-height: 1;
             margin-left: 2rem;
-        }
-
-        #key_features .screenshots {
             text-align: center;
         }
 
@@ -255,9 +247,12 @@
             margin-top: 1.2rem;
         }
 
+        #key_features .screenshots {
+            text-align: center;
+        }
+
         #download {
             min-height: 40vh; 
-            background-color: var(--appricot-20);  
             border-radius: 4rem;
             margin: 0 10rem;
             margin-bottom: 2rem;
@@ -270,19 +265,18 @@
 /* color: #362B3D; */
 
         #download .content h2 {
-            color: #362B3D;
+            
         }
 
         #download .content .description p {
             text-align: center;
-            color: #362B3D;
         }
 
         #download .store {
             margin-top: 4rem;
             justify-content: center;
         }
-        
+    
         #contact {
             min-height: 40vh;   
         }
@@ -339,6 +333,11 @@
                 margin: 0 2rem;
             }
 
+            #key_features #grid .item {
+                width: 400px;
+                height: 400px;
+            }
+
             #download {
                 margin: 0 2rem;
                 margin-bottom: 2rem;
@@ -385,15 +384,21 @@
                 height: 100%;
             }
 
-            #key_features #grid .item {
-                border-radius: 3rem;
+            #key_features h4 {
+                font-size: 2.2em;
             }
 
-            #key_features #grid .item .appricot {
+            #key_features #grid .item {
+                border-radius: 3rem;
+                width: 80%;
+                height: 200px;
+            }
+
+            #key_features #grid .appricot {
                 background-color: transparent;
             }
 
-            #key_features #grid .item .lavender {
+            #key_features #grid .lavender {
                 background-color: transparent;
             }
             
@@ -471,22 +476,22 @@
         <div class="content">
             <h2>How it works</h2>
             <div id="grid" class="description">
-                <div class="item">
-                    <div class="lavender">
+                <div class="item lavender">
+                    <div>
                         <h4>1-Minute Sessions</h4> 
                         <p>Perfect when you need a quick reset.</p> 
                     </div>
                 </div>
 
-                <div class="item">
-                    <div class="appricot">
+                <div class="item appricot">
+                    <div>
                         <h4>Guided Animated Breathing</h4> 
                         <p>Smooth, intuitive visuals that naturally sync with your breath.</p>
                     </div>
                 </div>
 
-                <div class="item">
-                    <div class="appricot">
+                <div class="item appricot">
+                    <div>
                         <h4>Simple & Minimalist Design</h4>
                         <p>No clutter. No distractions. Pure calm.</p>
                     </div>
@@ -494,8 +499,8 @@
                 <!-- <h4>Customizable Rhythms</h4>
                 <p>Choose the breathing pace that works best for you.</p> -->
 
-                <div class="item">
-                    <div class="bottom lavender">
+                <div class="item lavender">
+                    <div class="bottom">
                         <h4>Daily Use Friendly</h4>
                         <p>Build a habit of small mindful breaks that make a big difference.</p>
                     </div>
@@ -536,7 +541,7 @@
 
 
 
-    <section id="download">
+    <section id="download" class="appricot">
         <div class="content">
             <h2>Ready to Find Your Calm?</h2>
             <div class="description">
