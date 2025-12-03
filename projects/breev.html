@@ -100,10 +100,12 @@
         }
 
         .content .description ul {
-            list-style-type: "- ";
+            list-style-type: square;
             margin-left: 3rem;
             font-size: 2.2em;
             font-weight: 100;
+            /* text-align: center; */
+            list-style-position: inside;
         }
 
         .screenshots img {
@@ -191,17 +193,22 @@
         #what_is .content-grid {
             display: grid;
             grid-template-columns: 1fr 3fr;
+            /* justify-items: center; */
+        }
+
+        #what_is .content-grid .description p {
+            text-align: center;
         }
 
         #what_helps .content-grid {
             display: grid;
             grid-template-columns: 3fr 1fr;
+            /* justify-items: center; */
         }
-/* 
-        #what_helps .content .description p {
-            font-size: 2em;
-            line-height: 1.2;
-        } */
+
+        #what_helps .content-grid ul {
+            justify-self: center;
+        }
 
         #download img {
             height: 48px;
@@ -452,7 +459,11 @@
 
     <section id="what_is">
         <div class="content">
-            <h2>What is BREEV?</h2>
+            <h2>What is <span class="thin">B</span>
+                            <span class="light">R</span>
+                            <span class="medium">E</span>
+                            <span class="bold">E</span>
+                            <span class="bold">V</span>?</h2>
             <div class="content-grid">
                 <div class="content-item screenshots">
                     <img src="../imgs/mockup-breath.webp" />
