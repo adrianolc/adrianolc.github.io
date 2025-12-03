@@ -215,7 +215,7 @@
         }
 
         #key_features #grid .item {
-            /* border: 1px solid black; */
+            text-align: center;
         }
 
         #key_features #grid .item:nth-child(even) {
@@ -384,6 +384,25 @@
                 grid-template-columns: 1fr;
                 height: 100%;
             }
+
+            #key_features #grid .item {
+                border-radius: 3rem;
+            }
+
+            #key_features #grid .item .appricot {
+                background-color: transparent;
+            }
+
+            #key_features #grid .item .lavender {
+                background-color: transparent;
+            }
+            
+            #key_features #grid .item:nth-child(odd) {
+                background-color: var(--primary-20);
+            }
+            #key_features #grid .item:nth-child(even) {
+                background-color: var(--appricot-20);
+            }
         }
     </style>
 </head>
@@ -453,14 +472,14 @@
             <h2>How it works</h2>
             <div id="grid" class="description">
                 <div class="item">
-                    <div class="top lavender">
+                    <div class="lavender">
                         <h4>1-Minute Sessions</h4> 
                         <p>Perfect when you need a quick reset.</p> 
                     </div>
                 </div>
 
                 <div class="item">
-                    <div class="top appricot">
+                    <div class="appricot">
                         <h4>Guided Animated Breathing</h4> 
                         <p>Smooth, intuitive visuals that naturally sync with your breath.</p>
                     </div>
