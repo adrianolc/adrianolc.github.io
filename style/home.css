@@ -241,6 +241,14 @@ section:nth-child(odd) {
     display: none;
 }
 
+footer {
+    background-color: var(--bg-dark-blue);
+    text-align: center;
+    font-size: .8rem;
+    padding: 2rem;
+    color: var(--mist-white);
+}
+
 @media screen and (max-width: 880px) {
     .hero {
         min-height: 75vh;

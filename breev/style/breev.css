@@ -259,14 +259,25 @@ section .content {
     justify-content: center;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--bg-dark-blue);
+    font-size: .9em;
+    padding: 2rem;
+    color: var(--mist-white);
+}
+
+.copyright {
+    text-align: end;
+}
+
 .contact {
-    padding-bottom: 2rem;
     text-align: start;
 }
 
 .contact a {
     color: var(--mist-white);
-    font-size: 1.2em;
     text-decoration: none;
     margin: 0 .5rem;
 }
