@@ -429,4 +429,16 @@ footer {
     #download .content .description p {
         font-size: 1.3em;
     }
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .contact {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 }
