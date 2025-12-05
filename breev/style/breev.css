@@ -259,6 +259,10 @@ section .content {
     justify-content: center;
 }
 
+#download .content h2 {
+    line-height: 1;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;

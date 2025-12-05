@@ -117,7 +117,6 @@ section:nth-child(odd) {
     margin: 2rem;
     padding: 2rem;
     border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--primary); 
 }
 
@@ -151,7 +150,6 @@ section:nth-child(odd) {
     margin: .5rem;
     padding: 1rem;
     border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--primary);
 }
 
@@ -247,6 +245,10 @@ footer {
     font-size: .8rem;
     padding: 2rem;
     color: var(--mist-white);
+}
+
+.skill-category:hover, .experience-item:hover, .project-card:hover {
+    box-shadow: 0 2px 20px var(--primary);
 }
 
 @media screen and (max-width: 880px) {
